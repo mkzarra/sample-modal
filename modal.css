@@ -1,7 +1,9 @@
 body {
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
+  padding: 4%;
 }
+
 
 #backdrop {
   display: none;
@@ -14,20 +16,33 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+#close_button {
+  cursor: pointer;
+}
+
 #modal {
-      display: none;
-      position: fixed;
-      z-index: 500;
-      background-color: white;
-      width: 50%;
-      border: 1px solid #ccc;
-      box-shadow: 1px 1px 1px black;
-      padding: 16px;
-      left: 15%;
-      top: 30%;
-      box-sizing: border-box;
-      transition: all 0.3s ease-out;
-      }
+  display: none;
+  position: fixed;
+  z-index: 500;
+  background-color: white;
+  width: 50%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  padding: 16px;
+  left: 15%;
+  top: 30%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+
+#open {
+  background: #79c2fa;
+  border: 1px solid #000000;
+  padding: 3px;
+  margin: 0 auto;
+  width: 6%;
+  text-align: center;
+}
 
 @media (min-width: 600px) {
   #modal {
